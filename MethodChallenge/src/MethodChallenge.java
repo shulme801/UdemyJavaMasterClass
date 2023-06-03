@@ -11,7 +11,7 @@ public class MethodChallenge {
         displayHighScorePosition("Percy", highScorePosition);//
 
         highScorePosition = calculateHighScorePosition(100);
-        displayHighScorePosition("Gilbert", highScorePosition);
+        displayHighScorePosition("Gilbert", highScorePosition); //
 
         highScorePosition = calculateHighScorePosition(25);
         displayHighScorePosition("James", highScorePosition);
