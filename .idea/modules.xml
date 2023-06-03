@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/HelloWorld/HelloWorld.iml" filepath="$PROJECT_DIR$/HelloWorld/HelloWorld.iml" />
+      <module fileurl="file://$PROJECT_DIR$/HelloWorld2/HelloWorld2.iml" filepath="$PROJECT_DIR$/HelloWorld2/HelloWorld2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/IfExercise/IfExercise.iml" filepath="$PROJECT_DIR$/IfExercise/IfExercise.iml" />
+      <module fileurl="file://$PROJECT_DIR$/JustPlaying/JustPlaying.iml" filepath="$PROJECT_DIR$/JustPlaying/JustPlaying.iml" />
+      <module fileurl="file://$PROJECT_DIR$/KeywordsAndCodeBlocks/KeywordsAndCodeBlocks.iml" filepath="$PROJECT_DIR$/KeywordsAndCodeBlocks/KeywordsAndCodeBlocks.iml" />
+      <module fileurl="file://$PROJECT_DIR$/KeywordsAndExpressions/KeywordsAndExpressions.iml" filepath="$PROJECT_DIR$/KeywordsAndExpressions/KeywordsAndExpressions.iml" />
+      <module fileurl="file://$PROJECT_DIR$/MethodChallenge/MethodChallenge.iml" filepath="$PROJECT_DIR$/MethodChallenge/MethodChallenge.iml" />
+      <module fileurl="file://$PROJECT_DIR$/OperatorChallenge/OperatorChallenge.iml" filepath="$PROJECT_DIR$/OperatorChallenge/OperatorChallenge.iml" />
+      <module fileurl="file://$PROJECT_DIR$/UdemyJavaMasterClass.iml" filepath="$PROJECT_DIR$/UdemyJavaMasterClass.iml" />
+    </modules>
+  </component>
+</project>
