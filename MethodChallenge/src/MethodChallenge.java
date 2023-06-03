@@ -2,7 +2,7 @@ public class MethodChallenge {
     public static void main(String[] args) {
         // test upper boundaries
         int highScorePosition = calculateHighScorePosition(1500);
-        displayHighScorePosition("Stephen", highScorePosition);
+        displayHighScorePosition("Stephen", highScorePosition); //
 
         highScorePosition = calculateHighScorePosition(1000);
         displayHighScorePosition("Bob", highScorePosition);
