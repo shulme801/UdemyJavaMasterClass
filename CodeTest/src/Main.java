@@ -7,8 +7,28 @@ public class Main {
         } else {
             System.out.println("2000 is not a leap year");
         }
+
+        printConversion(100.00);
     }
 
+    public static long toMilesPerHour(double kilometersPerHour){
+        if (kilometersPerHour < 0) {
+            return(-1);
+        }
+
+        return Math.round(kilometersPerHour/1.609);
+
+    }
+
+    public static void printConversion(double kilometersPerHour) {
+
+        if (kilometersPerHour < 0) {
+            System.out.println("Invalid Value");
+        } else {
+            long mph = toMilesPerHour(kilometersPerHour);
+            System.out.println("mph is " + mph);
+        }
+    }
     public static boolean isLeapYear(int year) {
         if ((year < 1) || (year > 9999)) {
             return false;
