@@ -10,7 +10,7 @@ public class Main {
 
         printConversion(100.00);
     }
-
+// These are code samples that I wrote for the first set of coding exercises in the Java MasterClass Course
     public static long toMilesPerHour(double kilometersPerHour){
         if (kilometersPerHour < 0) {
             return(-1);
