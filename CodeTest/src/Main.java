@@ -8,8 +8,9 @@ public class Main {
             System.out.println("2000 is not a leap year");
         }
 
-        printConversion(100.00);
+        printConversion(151.00);
     }
+
 // These are code samples that I wrote for the first set of coding exercises in the Java MasterClass Course
     public static long toMilesPerHour(double kilometersPerHour){
         if (kilometersPerHour < 0) {
