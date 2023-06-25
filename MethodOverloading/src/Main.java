@@ -1,10 +1,11 @@
 public class Main {
     public static void main(String[] args) {
-        calculateScore("Stephen", 255);
+        int newScore = calculateScore("Stephen", 255);
+        System.out.println("New score is " +  newScore);
     }
 
     public static int calculateScore(String playerName, int score) {
         System.out.println("Player " + playerName + " scored " + score + " points");
-        return(score);
+        return(score * 1000);
     }
 }
