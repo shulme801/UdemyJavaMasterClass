@@ -2,9 +2,9 @@ public class Main {
     public static void main(String[] args) {
         int newScore = calculateScore("Stephen", 255);
         System.out.println("New score is " +  newScore);
+        calculateScore(75);
+        calculateScore();
 
-        newScore = calculateScore(75);
-        System.out.println("Unnamed player" + " scored " + newScore + " points");
     }
 
     public static int calculateScore(String playerName, int score) {
@@ -12,7 +12,13 @@ public class Main {
         return(score * 1000);
     }
     public static int calculateScore(int score) {
-
-        return(score * 1000);
+        System.out.println("Unnamed player" + " scored " + score + " points");
+        return score;
     }
+
+    public static int calculateScore() {
+        System.out.println("No player name, no player score!");
+        return(0);
+    }
+
 }
