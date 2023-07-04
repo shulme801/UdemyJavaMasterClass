@@ -1,6 +1,7 @@
 public class Main {
     public static void main(String[] args) {
         System.out.println(getDurationString(-9)); // This is the first test case
+
     }
 
     public static String getDurationString(int seconds) {
