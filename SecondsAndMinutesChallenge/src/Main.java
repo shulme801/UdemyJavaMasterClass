@@ -8,6 +8,7 @@ public class Main {
         System.out.println(getDurationString(3945));
         System.out.println(getDurationString(0,17));
         System.out.println(getDurationString(0,0));
+
     }
 
     public static String getDurationString(int seconds) {
