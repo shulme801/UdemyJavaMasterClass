@@ -1,43 +1,38 @@
 public class Main {
     public static void main(String[] args) {
-        System.out.println("First test case: " + getDurationString(3945)); // This is the first test case
-        System.out.println("Second test case: " + getDurationString(68,45)); //This is the second test case
+        System.out.println("First test case: " + getDurationString(-3945));
+        System.out.println("Second test case: " + getDurationString(65, -45));
+        System.out.println("Third test case: " + getDurationString(65,145));
+        System.out.println("Third test case: " + getDurationString(-65,145));
+        System.out.println(getDurationString(65,45));
+        System.out.println(getDurationString(3945));
+        System.out.println(getDurationString(0,17));
+        System.out.println(getDurationString(0,0));
     }
 
     public static String getDurationString(int seconds) {
 
-        if (seconds <=0) {
-            return("Error -- seconds parameter was "
-                    + seconds
-                    + "\n which is less than or equal to zero");
+        if (seconds < 0) {
+            return("Error -- invalid data for seconds("+ seconds +"). seconds must be a positive integer");
         }
 
-        // Let's figure out how many minutes are contained in the input seconds parameter
-        int minutes          = seconds / 60;
-        // Now, how many whole hours are in the input seconds parameter?
-        int hours            = minutes / 60;
-        // Next, we're going to figure out how many minutes are left over after we have divided out
-        // the hours, that is, given the input seconds, compute the xx hours and yy minutes that this
-        // number of seconds produces..
-        int remainingMinutes = minutes % 60;
-        // Last, given that the input seconds = xx hours and yy minutes, how many seconds remain?
-        int remainingSeconds = seconds % 60;
+        return getDurationString(seconds / 60,seconds % 60); // how many minutes were passed in? how many seconds remain when minutes are taken out?
 
-        return(hours + "h "
-               + remainingMinutes + "m "
-               + remainingSeconds + "s\n");
     }
 
     public static String getDurationString(int minutes, int seconds) {
-        if (seconds <=0)  {
-            return("Error -- seconds parameter was "
-                    + seconds
-                    + "\n which is less than or equal to zero");
+
+        if (minutes < 0) {
+            return "Error -- invalid data for minutes("+ minutes +"). minutes must be a positive integer";
+
         }
-        if (minutes <=0) {
-            return("Error -- minutes parameter was "
-                    + minutes
-                    + "\n which is less than or equal to zero");
+
+        if (seconds < 0) {
+            return("Error -- invalid data for seconds("+ seconds +"). seconds must be a positive integer");
+        }
+
+        if (seconds > 59) {
+            return("Error -- invalid data for seconds("+ seconds +"). seconds must be less than or equal to 59");
         }
 
         // Now, how many whole hours are in the input minutes parameter?
@@ -46,11 +41,10 @@ public class Main {
         // the hours, that is, given the input seconds, compute the xx hours and yy minutes that this
         // number of seconds produces..
         int remainingMinutes = minutes % 60;
-        // Last, given that the input seconds = xx hours and yy minutes, how many seconds remain?
-        int remainingSeconds = seconds % 60;
+
 
         return(hours + "h "
                 + remainingMinutes + "m "
-                + remainingSeconds + "s\n");
+                + seconds + "s\n");
     }
 }
