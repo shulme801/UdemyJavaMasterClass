@@ -1,31 +1,20 @@
 public class NumberOfDaysInMonth {
     public static void main(String[] args) {
        // Test data from instructor + some of my own
+        int[] isLeapArray = new int[] {-1600, 1600, 2017, 1900, 2000, 2020, 2024, 400, 2100};
+        for (int leapYr : isLeapArray) {
+            System.out.println("Is " + leapYr + " a leap year? " + isLeapYear(leapYr));
+        }
 
+        System.out.println("\n");
 
-       System.out.println("Is -1600 a leap year? " + isLeapYear(-1600));
-       System.out.println("Is 1600 a leap year? " + isLeapYear(1600));
-       System.out.println("Is 2017 a leap year? " + isLeapYear(2017));
-       System.out.println("Was 1900 a leap year? " + isLeapYear(1900));
-       System.out.println("Is 2000 a leap year? " + isLeapYear(2000));
-       System.out.println("Is 2020 a leap year? " + isLeapYear(2020));
-       System.out.println("Is 2024 a leap year? " + isLeapYear(2024));
-       System.out.println("Was 400 a leap year? " + isLeapYear(400));
-       System.out.println("Will 2100 be a leap year? " + isLeapYear(2100));
-
-       System.out.println("Number of days in January 2020 is " + getDaysInMonth(1, 2020));
-       System.out.println("Number of days in February 2020 is " + getDaysInMonth(2, 2020));
-       System.out.println("Number of days in February 2018 is " + getDaysInMonth(2, 2018));
-       System.out.println("Number of days in -January 2020 is " + getDaysInMonth(-1, 2020));
-       System.out.println("Number of days in January -2020 is " + getDaysInMonth(1, -2020));
-       System.out.println("Number of days in December 2020 is " + getDaysInMonth(12, 2020));
-
-       int[] yearArray = new int[] {1900, 1901, 1902, 1903, 1904, 1905, -1906};
+       int[] yearArray = new int[] {1900, 1901, 1902, 1903, 1904, 1905, -1906, 2018, -2020, 2020 };
 
        for (int yr : yearArray) {
            for (int i = 0; i <= 13; i++) {
                System.out.println("Number of days in " + getMonthName(i) + " " + yr + " is " + getDaysInMonth(i, yr));
            }
+           System.out.println("\n");
        }
     }
 
