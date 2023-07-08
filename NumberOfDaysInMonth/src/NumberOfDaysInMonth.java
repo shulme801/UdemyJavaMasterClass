@@ -1,6 +1,8 @@
 public class NumberOfDaysInMonth {
     public static void main(String[] args) {
        // Test data from instructor + some of my own
+
+
        System.out.println("Is -1600 a leap year? " + isLeapYear(-1600));
        System.out.println("Is 1600 a leap year? " + isLeapYear(1600));
        System.out.println("Is 2017 a leap year? " + isLeapYear(2017));
