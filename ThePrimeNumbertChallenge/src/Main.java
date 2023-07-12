@@ -3,7 +3,7 @@ public class Main {
 
         int primeCount = 0;
 
-        for (int i = 0; i <= 1000; i++){
+        for (int i = 10; i <= 50; i++){
             if (isPrime(i)) {
                 System.out.println(i + " is a prime number");
                 primeCount++;
@@ -12,6 +12,7 @@ public class Main {
                 break;
             }
         }
+
     }
 
     public static boolean isPrime(int wholeNumber) {
