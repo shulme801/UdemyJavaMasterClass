@@ -1,13 +1,17 @@
 public class Main {
     public static void main(String[] args) {
 
-        int i = 5;
-        while (i <= 20){
-            if (isEvenNumber(i)) {
-                System.out.println(i + " is even!");
+        int number = 4;
+        int finishNumber = 20;
+        while (number <= finishNumber){
+            number++;
+            if (! isEvenNumber(number)) {
+                continue;
             }
-            i++;
+            System.out.println(number + " is even!");
         }
+
+
     }
 
     public static boolean isEvenNumber(int num) {
